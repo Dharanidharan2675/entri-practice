@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+}
+
+header {
+  background: #1877f2;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 25%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar img {
+  width: 150px;
+  border-radius: 80%;
+}
+
+.sidebar h2 {
+  margin-top: 10px;
+}
+
+.sidebar p {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+
+.post-1 {
+  height: 300px;
+  width: 400px;
+}
+.feed {
+  width: 75%;
+  margin-left: 20px;
+}
+
+.create-post {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-post textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.create-post button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-post button:hover {
+  background: #145dbf;
+}
+
+.post {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+  margin-bottom: 10px;
+}
+
+.post p {
+  margin-bottom: 15px;
+}
+
+.post img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.actions button {
+  padding: 10px 20px;
+  border: none;
+  background: #e4e6eb;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.actions button:hover {
+  background: #d8dadf;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .feed {
+    width: 100%;
+    margin: 0;
+  }
+
+  .feed {
+    margin-top: 20px;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav {
+    margin-top: 10px;
+  }
+}
